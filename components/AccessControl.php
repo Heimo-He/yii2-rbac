@@ -52,7 +52,7 @@ class AccessControl extends \yii\base\ActionFilter
             $this->_user = Instance::ensure($this->_user, User::className());
         }
 
-        $authHeader = Yii::$app->getRequest()->getHeaders()->get('Authorization') ?? '';
+        $authHeader = Yii::$app->getRequest()->getHeaders()->get('Authorization');
         if ($authHeader !== null && preg_match('/^Bearer\s+(.*?)$/', $authHeader, $matches)) {
             $token =$matches[1];
         }else{
