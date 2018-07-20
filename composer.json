@@ -10,6 +10,7 @@
   ],
   "type": "yii2-extension",
   "license": "MIT",
+  "version": "v-1.0.0",
   "support": {
     "issues": "https://github.com/heimo-he/yii2-rbac/issues",
     "source": "https://github.com/heimo-he/yii2-rbac"
