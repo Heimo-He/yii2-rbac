@@ -7,7 +7,7 @@
 * **安装:**
 
 ```
-composer require Heimo-He/yii2-rbac
+composer require heimo/yii2-rbac
 ```
 
 ### **使用**
@@ -36,7 +36,7 @@ composer require Heimo-He/yii2-rbac
 1.菜单表menu
 
 ```
-yii migrate --migrationPath=@vendor/Heimo-He/yii2-rbac/migrations
+yii migrate --migrationPath=@vendor/heimo/yii2-rbac/migrations
 ```
 
 2.rbac相关权限表
