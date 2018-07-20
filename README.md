@@ -6,7 +6,7 @@
 
 * **安装:**
 
-```
+```php
 composer require heimo/yii2-rbac
 ```
 
@@ -35,11 +35,16 @@ composer require heimo/yii2-rbac
 
 1.菜单表menu
 
-```
+```php
 yii migrate --migrationPath=@vendor/heimo/yii2-rbac/migrations
 ```
 
 2.rbac相关权限表
-```
+```php
 yii migrate --migrationPath=@yii/rbac/migrations/
 ```
+
+* **授权认证方式**
+
+1.url中增加`access_token`参数 或者 header中增加`Authorization`参数，值为`Bearer [access_token值]`
+2.UserModel实现`loginByAccessToken($access_token)`方法
