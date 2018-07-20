@@ -1,6 +1,6 @@
 {
-  "name": "Heimo-He/yii2-rbac",
-  "description": "RBAC for Yii2",
+  "name": "heimo/yii2-rbac",
+  "description": "RBAC Lite for Yii2",
   "keywords": [
     "yii",
     "admin",
@@ -11,8 +11,8 @@
   "type": "yii2-extension",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/Heimo-He/yii2-rbac/issues",
-    "source": "https://github.com/Heimo-He/yii2-rbac"
+    "issues": "https://github.com/heimo-he/yii2-rbac/issues",
+    "source": "https://github.com/heimo-he/yii2-rbac"
   },
   "authors": [
     {
