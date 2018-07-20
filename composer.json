@@ -1,0 +1,31 @@
+{
+  "name": "Heimo-He/yii2-rbac",
+  "description": "RBAC for Yii2",
+  "keywords": [
+    "yii",
+    "admin",
+    "auth",
+    "rbac",
+    "restful"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/Heimo-He/yii2-rbac/issues",
+    "source": "https://github.com/Heimo-He/yii2-rbac"
+  },
+  "authors": [
+    {
+      "name": "Heimo-He",
+      "email": "heimo9397@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "heimo\\rbac\\": ""
+    }
+  }
+}
