@@ -95,13 +95,15 @@ class AccessControl extends \yii\base\ActionFilter
     protected function denyAccess($user)
     {
         Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-        if ($user->getIsGuest()) {
-            throw new ApiException(401, 'Login Required');
+	if (!Yii::$app->request->isOptions) {
+		if ($user->getIsGuest()) {
+            		throw new ApiException(401, 'Login Required');
 //            throw new UnauthorizedHttpException(Yii::t('yii', 'Login Required'));
-        } else {
-            throw new ApiException(403, 'You are not allowed to perform this action.');
+        	} else {
+            		throw new ApiException(403, 'You are not allowed to perform this action.');
 //            throw new ForbiddenHttpException(Yii::t('yii', 'You are not allowed to perform this action.'));
-        }
+        	}
+	}
     }
 
     /**
