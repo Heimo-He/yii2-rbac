@@ -1,7 +1,7 @@
 # yii2-rbac
 
 > Yii2 rbac 精简版(无对外接口) **仅供无需rbac接口的api应用使用**
-> 根据[yii2-rest-rbac（https://github.com/heimohoney/yii2-rest-rbac）](https://github.com/windhoney/yii2-rest-rbac)修改
+> 根据[yii2-rest-rbac（https://github.com/windhoney/yii2-rest-rbac）](https://github.com/windhoney/yii2-rest-rbac)修改
 > 
 
 ### **安装**
