@@ -145,6 +145,10 @@ class AccessControl extends \yii\base\ActionFilter
             }
         }
 
+	if (Yii::$app->request->isOptions) {
+            return false;
+        }
+
         if ($action->controller->hasMethod('allowAction') && in_array($action->id, $action->controller->allowAction())) {
             return false;
         }
